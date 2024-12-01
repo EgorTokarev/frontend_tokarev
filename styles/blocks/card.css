@@ -1,0 +1,70 @@
+/* card__peace-forest */
+.card__peace-forest {
+    position: relative;
+    font-family: "Din" white;
+}
+
+.card__peace-content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+
+.card__peace-forest-title {
+}
+
+.card__peace-forest-description {
+
+}
+
+.reservations {
+    position: absolute;
+}
+
+/* forest */
+.card__forest {
+    display: flex;
+}
+
+.card__forest-content {
+    float: right;
+    background-color: rgba(233, 236, 224, 1);
+}
+
+.card__forest-img {
+    float: left;
+}
+
+/*  facilities  */
+.facilities {
+    background-color: rgba(91, 100, 96, 1);
+    color: #FFFFFF;
+}
+
+.facilities__img {
+    filter: brightness(0) invert(1);
+}
+
+/* card */
+.card {
+    display: flex;
+}
+
+.card__content-title {
+    float: left;
+}
+
+.card__content-img {
+    float: right;
+}
+
+/* gallery */
+.gallery__img {
+    display: inline-block;
+}

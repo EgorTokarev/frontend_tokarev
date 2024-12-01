@@ -1,159 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find peace in the Forest</title>
-</head>
-<header>
-    <div>
-        <img src="img/logo.jpg" alt="">
-    </div>
-    <nav class="">
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Хижина</a></li>
-          <li><a href="#">Территория</a></li>
-          <li><a href="#">Бронирование</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">faq (Вопросы)</a></li>
-        </ul>
-        <div>
-            <button><img src="img/2.jpg" alt=""></button>
-        </div>
-        <div>
-            <button name="Book Now">Забронировать сейчас</button>
-        </div>
-    </nav>
-</header>
-<body>
-    <section class="">
-        <div>
-            <h2 class=" ">Найдите покой в лесу</h2>
-            <p class="">
-                Приезжайте и остановитесь в отеле Out Hut рядом с <br> Марьягер-фьорд в Дании
-            </p>
-            <img src="img/Intro.jpg" alt="">
-        <div>
-    </section>
+    <link rel="stylesheet" href="styles/base/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 
-    <section class="card">
-        <div>
-            <h2 class="card__title ">Каюты</h2>
-            <p class="card__description">
-                Три эксклюзивные и комфортабельные каюты Løvtag - Et, Ro и Ly - спроектированы архитектором Сигурдом Ларсеном. 
-                Все они имеют открытое пространство с двуспальной кроватью, двуспальным диваном-кроватью, кухней, отдельным туалетом и душем на открытом воздухе. 
-                На крыше, окруженной верхушками деревьев, есть терраса, которая находится на высоте около девяти метров над землей. Коттеджи построены вокруг высоких старых деревьев, которые проходят через весь коттедж от пола до потолка.
+    <title>Найдите покой в ​​лесу</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Хижина</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Территория</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Бронирование</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Вопросы</a>
+                    </li>
+                </ul>
+                <div class="nav_item--language">
+                    <a class="nav__link">
+                        <img class="language" src="img/2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="reservation">
+                    <a class="reservation__link" href="">Забронировать сейчас</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="card__peace-forest">
+                <img class="card__peace-forest-img" src="img/Intro.jpg" alt="">
+                <div class="card__peace-content">
+                    <h2 class="card__peace-forest-title">Найдите покой в лесу</h2>
+                    <p class="card__peace-forest-description">
+                        Приезжайте и остановитесь в отеле Out Hut рядом с <br> Марьягер-фьорд в Дании
+                    </p>
+                </div>
+                <div class="reservations">
+                    <button>Забронировать хижину</button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card__content-title">
+                    <h2 class="card__title ">Каюты</h2>
+                    <p class="card__description">
+                        Три эксклюзивные и комфортабельные каюты Løvtag - Et, Ro и Ly - спроектированы архитектором
+                        Сигурдом
+                        Ларсеном.
+                        Все они имеют открытое пространство с двуспальной кроватью, двуспальным диваном-кроватью,
+                        кухней,
+                        отдельным туалетом и душем на открытом воздухе.
+                        На крыше, окруженной верхушками деревьев, есть терраса, которая находится на высоте около девяти
+                        метров
+                        над землей. Коттеджи построены вокруг высоких старых деревьев, которые проходят через весь
+                        коттедж
+                        от
+                        пола до потолка.
+                    </p>
+                    <a class="card__link" href="">Читать далее</a>
+                </div>
+                <div class="card__content-img">
+                    <img class="card__img" src="img/1.jpg" alt="" width="693" height="438">
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="gallery__list">
+                    <img class="gallery__img" src="img/im1.jpg" alt="" width="432" height="387">
+                    <img class="gallery__img" src="img/im2.jpg" alt="" width="432" height="387">
+                    <img class="gallery__img" src="img/im3.jpg" alt="" width="432" height="387">
+                </div>
+            </section>
+            <section class="card__forest">
+                <div class="card__forest-img">
+                    <img src="img/maps.jpg" alt="" width="704" height="650">
+                </div>
+                <div class="card__forest-content">
+                    <h2 class="card__forest-title">Лес</h2>
+                    <p class="card__forest-description">
+                        Три эксклюзивные и комфортабельные каюты Løvtag - Et, Ro и Ly - спроектированы архитектором
+                        Сигурдом
+                        Ларсеном.
+                        Все они имеют открытое пространство с двуспальной кроватью, двуспальным диваном-кроватью,
+                        кухней,
+                        отдельным туалетом и душем на открытом воздухе.
+                        На крыше, окруженной верхушками деревьев, есть терраса, которая находится на высоте около девяти
+                        метров
+                        над землей.
+                        Коттеджи построены вокруг высоких старых деревьев, которые проходят через весь коттедж от пола
+                        до
+                        потолка.
+                    </p>
+                    <a class="card__forest-link" href="">Читать далее</a>
+                </div>
+            </section>
+            <section class="facilities">
+                <div>
+                    <h2 class="facilities__title">Удобства</h2>
+                    <div class="facilities__content">
+                        <figure>
+                            <img class="facilities__img" src="img/icons/fridge.svg" alt="">
+                            <figcaption>Мини-холодильник</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/kitchen.svg" alt="">
+                            <figcaption>Мини-кухня</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/coffee.svg" alt="">
+                            <figcaption>Кофемашина</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/Frame.svg" alt="">
+                            <figcaption>Электрический чайник для приготовления чая</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/park.svg" alt="">
+                            <figcaption>Парковка</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/trees.svg" alt="">
+                            <figcaption>Захватывающие дух виды</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/temperature.svg" alt="">
+                            <figcaption>Полы с подогревом</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/plug.svg" alt="">
+                            <figcaption>230В</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/wifi.svg" alt="">
+                            <figcaption>Вайфай</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/shower.svg" alt="">
+                            <figcaption>Душ</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/toilet.svg" alt="">
+                            <figcaption>Смывные унитазы</figcaption>
+                        </figure>
+                        <figure>
+                            <img class="facilities__img" src="img/icons/towels.svg" alt="">
+                            <figcaption>Постельное белье и полотенца</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="about-us">
+                <div class="about-us__content">
+                    <img class="about-us__img" src="img/block/1.jpg" alt="" width="704" height="559">
+                </div>
+                <div class="about-us__content">
+                    <img class="about-us__img" src="img/block/2.jpg" alt="" width="704" height="559">
+                </div>
+                <a class="about-us__description" href="">
+                    Подробнее о нас
+                </a>
+            </section>
+            <section class="connection">
+                <div class="connection__content">
+                    <h1 class="connection__title">Оставайтесь с нами на связи</h1>
+                    <p class="connection__description">
+                        Вестерборг, Дания
+                    </p>
+                    <p class="connection__description">
+                        +123 456 789 000<br>
+                        info@theglasshuts.com
+                    </p>
+                </div>
+                <div class="social-network">
+                    <img class="social-network__img" src="img/icons/instagram.svg" alt="">
+                    <img class="social-network__img" src="img/icons/facebook.svg" alt="">
+                    <img class="social-network__img" src="img/icons/twitter.svg" alt="">
+                </div>
+                <div class="booking">
+                    <img class="booking__img" src="img/homebuy.jpg" alt="" width="386" height="188">
+                    <button class="booking__button">Забронировать хижину</button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <section class="information">
+                <h1 class="information_title">Информационный бюллетень</h1>
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Email Adrdess" required />
+                </form>
+                <p class="information_description">
+                    Подпишитесь на нашу рассылку и получите 10% скидку на следующий заказ.
+                </p>
+            </section>
+            <section class="documentation">
+                <a class="documentation_link" href="">ПРАВИЛА И УСЛОВИЯ</a>
+                <a class="documentation_link" href="">ПРАВИЛА ОТМЕНЫ БРОНИРОВАНИЯ</a>
+                <a class="documentation_link" href="">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+            </section>
+            <section class="payment">
+                <img class="payment_img" src="img/icons/paypal.svg" alt="">
+                <img class="payment_img" src="img/icons/mastercard.svg" alt="">
+                <img class="payment_img" src="img/icons/visa.svg" alt="">
+                <img class="payment_img" src="img/icons/bank.svg" alt="">
+            </section>
+            <p>
+                © 2024 Стеклянные хижины
             </p>
-            <a class="card__link" href="">Читать далее</a>
-        <div>
-        <div>
-            <img class="card__img" src="img/1.jpg" width="693" height="438" alt="">
-        </div>
-    </section>
-    <section class="">
-        <div>
-            <img class="" src="img/im1.jpg" alt="">
-            <img class="" src="img/im2.jpg" alt="">
-            <img class="" src="img/im3.jpg" alt="">
-        </div>
-    </section>
-    <section class="">
-        <div>
-            <img class="" src="img/maps.jpg" width="" height="" alt="">
-        </div>
-        <div>
-            <h2 class=" ">Лес</h2>
-            <p class="">
-            Три эксклюзивные и комфортабельные каюты Løvtag - Et, Ro и Ly - спроектированы архитектором Сигурдом Ларсеном. 
-            Все они имеют открытое пространство с двуспальной кроватью, двуспальным диваном-кроватью, кухней, отдельным туалетом и душем на открытом воздухе. 
-            На крыше, окруженной верхушками деревьев, есть терраса, которая находится на высоте около девяти метров над землей. 
-            Коттеджи построены вокруг высоких старых деревьев, которые проходят через весь коттедж от пола до потолка.
-            </p>
-            <a class="" href="">Читать далее</a>
-        <div>
-    </section>
-    <section class="" >
-        <div>
-            <h2 class=" ">Удобства</h2>
-        <div>
-        <div>
-            <img src="img/icons/fridge.svg" alt="">
-            <img src="img/icons/kitchen.svg" alt="">
-            <img src="img/icons/coffee.svg" alt="">
-            <img src="img/icons/Frame.svg" alt="">
-            <br>
-            <img src="img/icons/park.svg" alt="">
-            <img src="img/icons/trees.svg" alt="">
-            <img src="img/icons/temperature.svg" alt="">
-            <img src="img/icons/plug.svg" alt="">
-            <br>
-            <img src="img/icons/wifi.svg" alt="">
-            <img src="img/icons/shower.svg" alt="">
-            <img src="img/icons/toilet.svg" alt="">
-            <img src="img/icons/towels.svg" alt="">
-        </div>
-    </section>
-    <section class="" >
-        <div>
-            <img src="img/block/1.jpg" alt="">
-        </div>
-        <div>
-            <img src="img/block/2.jpg" alt="">
-        </div>
-        <div>
-            <a href="">Подробнее о нас</a>
-        </div>
-    </section>
-    <section class="" >
-        <div>
-           <h1>Оставайтесь с нами на связи</h1>
-           <p>
-            Вестерборг, Дания
-           </p>
-           <p>
-            +123 456 789 000<br>
-            info@theglasshuts.com
-           </p>
-        </div>
-        <div>
-            <img src="img/icons/instagram.svg" alt="">
-            <img src="img/icons/facebook.svg" alt="">
-            <img src="img/icons/twitter.svg" alt="">
-       </div>
-        <div>
-            <img src="img/homebuy.jpg" alt="">
-            <button>Забронировать хижину</button>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </section>
+        </footer>
+    </div>
+
 </body>
-<footer>
-    <section>
-        <h1>Информационный бюллетень</h1>
-        <form action="">
-            <input type="email" name="email" id="email" placeholder="Email Adrdess" required/>
-        </form>
-        <p>
-            Подпишитесь на нашу рассылку и получите 10% скидку на следующий заказ.
-        </p>
-    </section>
-    <section>
-        <a href="">ПРАВИЛА И УСЛОВИЯ</a>
-        <a href="">ПРАВИЛА ОТМЕНЫ БРОНИРОВАНИЯ</a>
-        <a href="">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
-    </section>
-    <section>
-        <img src="img/icons/paypal.svg" alt="">
-        <img src="img/icons/mastercard.svg" alt="">
-        <img src="img/icons/visa.svg" alt="">
-        <img src="img/icons/bank.svg" alt="">
-    </section>
-    <p>
-        © 2024 Стеклянные хижины
-    </p>
-</footer>
+
+
 </html>
