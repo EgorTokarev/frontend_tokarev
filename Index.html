@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/base/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 
@@ -13,6 +14,14 @@
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__spinner"></div>
+            <div class="preloader__text">Загрузка...</div>
+        </div>
+    </div>
+
     <div class="container">
         <header class="header">
             <div class="logo">
@@ -45,30 +54,77 @@
                     </a>
                 </div>
                 <div class="reservation">
-                    <a class="reservation__link" href="">Забронировать сейчас</a>
+                    <a class="reservation__link" id="myBtn" href="">Забронировать сейчас</a>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="card__peace-forest">
-                <img class="card__peace-forest-img" src="img/Intro.jpg" alt="">
-                <div class="card__peace-content">
-                    <h2 class="card__peace-forest-title">Найдите покой в лесу</h2>
-                    <p class="card__peace-forest-description">
-                        Приезжайте и остановитесь в отеле Out Hut рядом с <br> Марьягер-фьорд в Дании
-                    </p>
+            <section class="slider">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <section class="card__peace-forest">
+                                <img class="card__peace-forest-img" src="img/Intro.jpg" alt="">
+                                <div class="card__peace-content">
+                                    <h2 class="card__peace-forest-title">Найдите покой в лесу</h2>
+                                    <p class="card__peace-forest-description">
+                                        Приезжайте и остановитесь в отеле Out Hut рядом с <br> Марьягер-фьорд в Дании
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="card__peace-forest">
+                                <img class="card__peace-forest-img" src="img/Intro.jpg" alt="">
+                                <div class="card__peace-content">
+                                    <h2 class="card__peace-forest-title">Найдите покой в горах</h2>
+                                    <p class="card__peace-forest-description">
+                                        Приезжайте и остановитесь в отеле Out Hut рядом с <br> Марьягер-фьорд в Дании
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="card__peace-forest">
+                                <img class="card__peace-forest-img" src="img/Intro.jpg" alt="">
+                                <div class="card__peace-content">
+                                    <h2 class="card__peace-forest-title">Найдите покой у берегов</h2>
+                                    <p class="card__peace-forest-description">
+                                        Приезжайте и остановитесь в отеле Out Hut рядом с <br> Марьягер-фьорд в Дании
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button">
+                        <div class="swiper-button-left">
+                            <img src="img/icons/left.svg" alt="">
+                        </div>
+                        <div class="swiper-button-right">
+                            <img src="img/icons/right.svg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="reservations">
-                    <button>Забронировать хижину</button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="booking--header">
+                    <div class="booking__button">
+                        <a>Забронировать хижину</a>
+                    </div>
+                    <div class="booking__box">
+                        <span class="booking__top">from</span>
+                        <span class="booking__items">€3.200</span>
+                        <span class="booking__batton">per night</span>
+                    </div>
                 </div>
             </section>
 
             <section class="card">
                 <div class="card__content-title">
-                    <h2 class="card__title ">Каюты</h2>
+                    <h2 class="card__title">Каюты</h2>
                     <p class="card__description">
                         Три эксклюзивные и комфортабельные каюты Løvtag - Et, Ro и Ly - спроектированы архитектором
                         Сигурдом
@@ -98,7 +154,10 @@
             </section>
             <section class="card__forest">
                 <div class="card__forest-img">
-                    <img src="img/maps.jpg" alt="" width="704" height="650">
+                    <img class="forest__img" src="img/map.jpg" alt="">
+                    <div class="forest__text">
+                        We Are Here
+                    </div>
                 </div>
                 <div class="card__forest-content">
                     <h2 class="card__forest-title">Лес</h2>
@@ -123,54 +182,54 @@
                 <div>
                     <h2 class="facilities__title">Удобства</h2>
                     <div class="facilities__content">
-                        <figure>
+                        <!-- <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/fridge.svg" alt="">
                             <figcaption>Мини-холодильник</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/kitchen.svg" alt="">
                             <figcaption>Мини-кухня</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/coffee.svg" alt="">
                             <figcaption>Кофемашина</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/Frame.svg" alt="">
                             <figcaption>Электрический чайник для приготовления чая</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/park.svg" alt="">
                             <figcaption>Парковка</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/trees.svg" alt="">
                             <figcaption>Захватывающие дух виды</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/temperature.svg" alt="">
                             <figcaption>Полы с подогревом</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/plug.svg" alt="">
                             <figcaption>230В</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/wifi.svg" alt="">
                             <figcaption>Вайфай</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/shower.svg" alt="">
                             <figcaption>Душ</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/toilet.svg" alt="">
                             <figcaption>Смывные унитазы</figcaption>
                         </figure>
-                        <figure>
+                        <figure class="facilities__item">
                             <img class="facilities__img" src="img/icons/towels.svg" alt="">
                             <figcaption>Постельное белье и полотенца</figcaption>
-                        </figure>
+                        </figure> -->
                     </div>
                 </div>
             </section>
@@ -187,26 +246,36 @@
             </section>
             <section class="connection">
                 <div class="connection__content">
-                    <h1 class="connection__title">Оставайтесь с нами на связи</h1>
-                    <p class="connection__description">
-                        Вестерборг, Дания
-                    </p>
-                    <p class="connection__description">
-                        +123 456 789 000<br>
-                        info@theglasshuts.com
-                    </p>
-                </div>
-                <div class="social-network">
-                    <img class="social-network__img" src="img/icons/instagram.svg" alt="">
-                    <img class="social-network__img" src="img/icons/facebook.svg" alt="">
-                    <img class="social-network__img" src="img/icons/twitter.svg" alt="">
+                    <h2 class="connection__title">Оставайтесь с нами на связи</h1>
+                        <p class="connection__description1">
+                            Вестерборг, Дания
+                        </p>
+                        <p class="connection__description2">
+                            +123 456 789 000<br>
+                            info@theglasshuts.com
+                        </p>
+                        <div class="social-network">
+                            <a class="social-network__img" href="">
+                                <img src="img/icons/instagram.svg" alt="">
+                            </a>
+                            <a class="social-network__img" href="">
+                                <img src="img/icons/facebook.svg" alt="">
+                            </a>
+                            <a class="social-network__img" href="">
+                                <img src="img/icons/twitter.svg" alt="">
+                            </a>
+                        </div>
                 </div>
                 <div class="booking">
                     <img class="booking__img" src="img/homebuy.jpg" alt="" width="386" height="188">
-                    <button class="booking__button">Забронировать хижину</button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="booking__button">
+                        <a>Забронировать хижину</a>
+                    </div>
+                    <div class="booking__box">
+                        <span class="booking__top">from</span>
+                        <span class="booking__items">€3.200</span>
+                        <span class="booking__batton">per night</span>
+                    </div>
                 </div>
             </section>
         </main>
@@ -214,32 +283,99 @@
 
         <footer class="footer">
             <section class="information">
-                <h1 class="information_title">Информационный бюллетень</h1>
-                <form action="">
-                    <input type="email" name="email" id="email" placeholder="Email Adrdess" required />
+                <h1 class="information_title">Информационная бюллетень</h1>
+                <form class="information__form">
+                    <input class="information__form-input" name="email" id="email" placeholder="Email Adrdess"
+                        required />
+                    <button class="information__form-button" type="submit">
+                        <img src="img/icons/arrow.svg" alt="">
+                    </button>
                 </form>
                 <p class="information_description">
                     Подпишитесь на нашу рассылку и получите 10% скидку на следующий заказ.
                 </p>
+                <p class="information_footer">
+                    © 2024 Стеклянные хижины
+                </p>
             </section>
-            <section class="documentation">
-                <a class="documentation_link" href="">ПРАВИЛА И УСЛОВИЯ</a>
-                <a class="documentation_link" href="">ПРАВИЛА ОТМЕНЫ БРОНИРОВАНИЯ</a>
-                <a class="documentation_link" href="">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+            <section class="documentation__payment">
+                <div class="documentation">
+                    <a class="documentation_link" href="">ПРАВИЛА И УСЛОВИЯ</a>
+                    <a class="documentation_link" href="">ПРАВИЛА ОТМЕНЫ БРОНИРОВАНИЯ</a>
+                    <a class="documentation_link" href="">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+                </div>
+                <div class="payment">
+                    <img class="payment_img" src="img/icons/paypal.svg" alt="">
+                    <img class="payment_img" src="img/icons/mastercard.svg" alt="">
+                    <img class="payment_img" src="img/icons/visa.svg" alt="">
+                    <img class="payment_img" src="img/icons/bank.svg" alt="">
+                </div>
             </section>
-            <section class="payment">
-                <img class="payment_img" src="img/icons/paypal.svg" alt="">
-                <img class="payment_img" src="img/icons/mastercard.svg" alt="">
-                <img class="payment_img" src="img/icons/visa.svg" alt="">
-                <img class="payment_img" src="img/icons/bank.svg" alt="">
-            </section>
-            <p>
-                © 2024 Стеклянные хижины
-            </p>
         </footer>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Бронирование домика</h2>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Дата заезда:</label>
+                                <input type="date" id="checkin" name="checkin" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="checkout">Дата выезда:</label>
+                                <input type="date" id="checkout" name="checkout" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hut">Выберите домик:</label>
+                            <select id="hut" name="hut" required>
+                                <option value="" disabled selected>-- Выберите вариант --</option>
+                                <option value="et">Домик "Et"</option>
+                                <option value="ro">Домик "Ro"</option>
+                                <option value="ly">Домик "Ly"</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Количество гостей:</label>
+                            <input type="number" id="guests" name="guests" min="1" max="4" value="2" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="comments">Дополнительные пожелания:</label>
+                            <textarea id="comments" name="comments" rows="3"
+                                placeholder="Особые требования, аллергии и т.д."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
-
 
 </html>

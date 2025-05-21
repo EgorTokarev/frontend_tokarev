@@ -6,7 +6,9 @@
 @import url("blocks/header.css");
 @import url("blocks/page.css");
 
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
 }
 
@@ -14,4 +16,10 @@
     max-width: 1408px;
     margin: 0 auto;
     width: 100%;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
