@@ -1,0 +1,96 @@
+.footer {
+    width: 1408px;
+    height: 477px;
+    display: flex; 
+    background-color: rgba(91, 100, 96, 1);
+    color: white;
+    padding: 100px 146px 100px 146px;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.information {
+    font-family: "OpenSans Light";
+    max-width: 432px;
+    height: 277px;
+}
+
+.information_title {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.information__form {
+    margin: 0;
+}
+
+.information_footer {
+    padding-top: 70px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.documentation__payment {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: flex-end;
+    height: fit-content;
+}
+.documentation {
+    display: flex; 
+    column-gap: 33px;
+    height: 50px;
+}
+
+.documentation_link {
+    text-decoration: none;
+    color: white;
+    font-family: "Din Light";
+    display: inline-block;
+}
+
+.payment {
+    display: flex; 
+    column-gap: 39px;
+    height: 50px;
+}
+
+.payment_img {
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+.information__form {
+    display: flex;
+    border-bottom: 1px solid rgba(239, 239, 239, 1);
+    padding-bottom: 5px;
+}
+.information__form-input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-family: "OpenSans Light";
+}
+.information__form-input::placeholder {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-style: oblique;
+    font-family: "OpenSans Light";
+}
+
+.information__form-button {
+    border: none;
+    background-color: transparent;
+}
+
+.information_description {
+    padding-top: 10px;
+    margin: 0;
+    font-family: "OpenSans Light";
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}

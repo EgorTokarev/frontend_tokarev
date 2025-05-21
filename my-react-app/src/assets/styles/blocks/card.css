@@ -1,0 +1,271 @@
+/* card__peace-forest */
+.card__peace-forest {
+    position: relative;
+    font-family: "Din Light";
+}
+
+.card__peace-content {
+    position: absolute;
+    right: 58px;
+    top: 95px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+
+.card__peace-forest-title {
+    font-family: "OpenSans Light";
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 72px;
+    margin: 0;
+
+}
+
+.card__peace-forest-description {
+    position: relative;
+    font-family: "Mulish Light";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    right: 84px;
+    top: 34px;
+    margin: 0;
+}
+
+.reservations {
+    position: absolute;
+}
+
+/*  facilities  */
+.facilities {
+    background-color: rgba(91, 100, 96, 1);
+    color: #FFFFFF;
+}
+
+.facilities__title {
+    font-family: "OpenSans Light";
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 150px;
+    margin: 0;
+}
+
+.facilities__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    max-width: 100%;
+
+    padding-top: 100px;
+    padding-right: 290px;
+    padding-bottom: 126px;
+    padding-left: 290px;
+
+}
+
+.facilities__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: calc(100% / 4);
+    text-align: center;
+    gap: 20px;
+    padding: 0 30px 80px; 
+    margin: 0;
+}
+
+.facilities__img {
+    filter: brightness(0) invert(1);
+    width: 70px;
+    height: 70px;
+}
+
+/* card */
+.card {
+    display: flex;
+    margin-top: 148px;
+    margin-bottom: 150px;
+}
+
+.card__content-title {
+    float: left;
+    padding-left: 147px;
+    padding-top: 87px;
+    padding-right: 105px;
+    margin: 0;
+}
+
+.card__title {
+    color: rgba(91, 100, 96, 1);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.card__description {
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+}
+
+.card__link {
+    color: rgba(91, 100, 96, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+}
+
+.card__content-img {
+    float: right;
+    margin: 0;
+}
+
+/* gallery */
+.gallery {
+    padding: 0 30px;
+    margin-bottom: 124px;
+}
+
+.gallery__list {
+    display: flex;
+    column-gap: 24px;
+}
+
+/* Card__forest */
+.card__forest {
+    display: flex;
+    margin-top: 148px;
+    margin-bottom: 0;
+}
+
+.card__forest-content {
+    max-width: 50%;
+    background-color: rgba(233, 236, 224, 1);
+    padding: 150px 129px 149px 110px;
+    margin: 0;
+}
+
+.card__forest-title {
+    color: rgba(91, 100, 96, 1);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+}
+
+.card__forest-description {
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: left;
+}
+
+.card__forest-link {
+    color: rgba(91, 100, 96, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+}
+
+.card__forest-img {
+    position: relative;
+    max-width: 50%;
+    width: 100%;
+    margin: 0;
+
+}
+
+.forest__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+
+.card__forest-img::after {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.25);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.forest__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    padding: 28px;
+
+    font-family: "Din Light";
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(51, 51, 51, 1);
+    text-align: center;
+    text-transform: uppercase;
+
+
+    background: rgba(255, 255, 255, 1);
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.forest__text::after {
+    position: absolute;
+    content: "";
+    z-index: 2;
+    left: -40px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    width: 176px;
+    background-color: rgba(255, 255, 255, 0.15);
+    opacity: 25%;
+    border-radius: 50%;
+    height: 176px;
+}
+
+.forest__text::before {
+    position: absolute;
+    content: "";
+    z-index: 3;
+    left: -19px;
+    top: -19px;
+    bottom: 0;
+    right: 0;
+    width: 134px;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 25%;
+    border-radius: 50%;
+    height: 134px;
+}
